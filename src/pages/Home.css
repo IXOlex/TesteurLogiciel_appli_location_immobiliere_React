@@ -1,0 +1,19 @@
+.home {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Conteneur gris clair */
+.cards-wrapper {
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  padding: 50px;
+  margin-bottom: 50px;
+}
+
+/* Grille des cards */
+/.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
