@@ -1,0 +1,35 @@
+.banner {
+    position: relative;
+    height: 223px;
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/src/images/partout.jpg");
+    /* adapte */
+    background-size: cover;
+    background-position: center;
+}
+
+/* overlay sombre */
+.banner::before {
+    opacity: 60%;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:linear-gradient(black)
+}
+
+/* texte */
+.banner h1 {
+    position: relative;
+    color: white;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 48px;
+    line-height: 143%;
+    letter-spacing: 0%;
+    vertical-align: bottom;
+}

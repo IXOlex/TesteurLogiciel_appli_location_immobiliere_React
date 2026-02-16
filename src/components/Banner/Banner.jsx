@@ -1,8 +1,9 @@
-function Banner({ image, title }) {
+import "./Banner.css";
+
+function Banner({ title }) {
   return (
     <div className="banner">
-      <img src={image} alt="Bannière" />
-      {title && <h1>{title}</h1>}
+      <h1>{title}</h1>
     </div>
   );
 }

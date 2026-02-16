@@ -1,19 +1,27 @@
 .home {
-  max-width: 1440px;
+  max-width: 2560px;
   margin: 0 auto;
+  padding: 100px;
 }
 
-/* Conteneur gris clair */
-.cards-wrapper {
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* Conteneur gris */
+.box_card {
   background-color: #f6f6f6;
   border-radius: 25px;
   padding: 50px;
-  margin-bottom: 50px;
+  margin-top: 40px;
 }
 
-/* Grille des cards */
-/.cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
 }

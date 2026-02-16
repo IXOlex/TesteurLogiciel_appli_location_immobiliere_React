@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Banner from "../components/Banner/Banner";
 import Card from "../components/Card/Card";
 import "./Home.css";
 
@@ -13,19 +14,21 @@ function Home() {
   }, []);
 
   return (
-    <main>
-      <section className="cards">
-        {properties.map((property) => (
-          <Card
-            key={property.id}   // clé unique pour chaque carte
-            id={property.id}
-            title={property.title}
-            cover={property.cover}
-          />
-        ))}
+    <main className="home">
+      <Banner title="Chez vous, partout et ailleurs" />
+      <section className="box_card">
+        <div className="cards">
+          {properties.slice(0, 6).map((property) => (
+            <Card
+              key={property.id}
+              id={property.id}
+              title={property.title}
+              cover={property.cover}
+            />
+          ))}
+        </div>
       </section>
     </main>
   );
 }
-
 export default Home;
