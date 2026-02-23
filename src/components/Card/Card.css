@@ -25,14 +25,12 @@
 
 /* Titre */
 .card-title {
+  display:flex;
   position: absolute;
   width: 300px;
-  height: 52px;
   top: 268px;
   left: 20px;
-  font-family: Montserrat;
   font-weight: 700;
-  font-style: Bold;
   font-size: 18px;
   line-height: 143%;
   letter-spacing: 0%;

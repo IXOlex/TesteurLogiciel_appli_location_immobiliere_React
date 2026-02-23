@@ -23,11 +23,12 @@ a:hover {
 }
 
 body {
-  margin: 0;
-  display: flex;
+  margin:0;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  max-width:1440px;
+  max-height:1517px;
+  min-width: 375px;
+  min-height: 842.88px;
 }
 
 h1 {

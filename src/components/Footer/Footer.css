@@ -2,10 +2,16 @@
   background-color: black;
   color: white;
   text-align: center;
-  padding: 40px;
+  margin-left:0px;
 }
 
 .footer img {
-  height: 40px;
-  margin-bottom: 20px;
+  padding-bottom:28.56px;
+  padding-top:66px;
+  height: 39.44px;
+}
+
+.footer p {
+  margin:0;
+  padding-bottom:29px;
 }

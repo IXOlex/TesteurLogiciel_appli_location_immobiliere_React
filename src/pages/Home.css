@@ -1,7 +1,5 @@
 .home {
-  max-width: 2560px;
-  margin: 0 auto;
-  padding: 100px;
+  margin:0;
 }
 
 .cards {
@@ -14,14 +12,6 @@
 .box_card {
   background-color: #f6f6f6;
   border-radius: 25px;
-  padding: 50px;
-  margin-top: 40px;
-}
-
-
-/* Responsive */
-@media (max-width: 768px) {
-  .cards {
-    grid-template-columns: 1fr;
-  }
+  padding: 56px 50px 43px 50px;
+  margin:43px 100px 50px 100px;
 }
