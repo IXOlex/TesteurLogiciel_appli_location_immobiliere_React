@@ -1,0 +1,58 @@
+.MainError .error {
+    display:flex;
+    justify-content:center;
+    margin:0;
+    padding:0;
+}
+.MainError .error a {
+    flex-direction:row;
+    justify-content:center;
+}
+
+.MainError .error h1 {
+    display:flex;
+    font-size:288px;
+    color: rgba(255, 96, 96, 1);
+    margin:0;
+    padding:0;
+    justify-content:center;
+}
+
+.MainError .errorpage{
+    display:flex;
+    justify-content: center;
+    margin:139px 0 139px 0 ;
+}
+
+.MainError .errorpage h2{
+    color: rgba(255, 96, 96, 1);
+    display:flex;
+    font-size:36px;
+    margin:0;
+    justify-content:center;
+}
+
+.MainError a {
+    display:flex;
+    font-size:18px;
+    justify-content: center;
+    padding-bottom:139px;
+    color:black;
+    text-decoration:underline solid;
+}
+
+.footer {
+    width:auto;
+    margin:auto;
+}
+
+.header {
+    display:flex;
+}
+
+.MainError{
+    display:flex;
+    width:1440px;
+    margin:auto;
+    flex-direction: column;
+}

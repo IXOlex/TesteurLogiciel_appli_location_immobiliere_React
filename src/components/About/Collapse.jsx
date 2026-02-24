@@ -1,21 +1,35 @@
-import { useState } from "react";
 import "./Collapse.css";
+import { useRef, useState, useEffect } from "react";
 
 function Collapse({ title, children }) {
     const [isOpen, setIsOpen] = useState(false);
+    const [height, setHeight] = useState(0);
+    const contentRef = useRef(null);
+
+    useEffect(() => {
+    if (isOpen && contentRef.current) {
+        setHeight(contentRef.current.scrollHeight);
+    }
+        }, [isOpen, children]);
 
     return (
-        <div className="collapse2">
-            <div className="collapse-header" onClick={() => setIsOpen(!isOpen)}>
+        <div className="collapse">
+            <div
+                className="collapse-header"
+                onClick={() => setIsOpen(prev => !prev)}
+            >
                 <h3>{title}</h3>
-                <span>{isOpen ? "▲" : "▼"}</span>
+                <i className={`fa-solid fa-chevron-up ${isOpen ? "open" : ""}`}></i>
             </div>
 
-            {isOpen && (
-                <div className="collapse-content">
+            <div
+                className={`collapse-content ${isOpen ? "open" : ""}`}
+                style={{ maxHeight: isOpen ? height + "px" : "0px" }}
+            >
+                <div ref={contentRef} className="collapse-inner">
                     {children}
                 </div>
-            )}
+            </div>
         </div>
     );
 }

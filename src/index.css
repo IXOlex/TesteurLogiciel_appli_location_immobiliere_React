@@ -1,5 +1,5 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Montserrat, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -23,7 +23,7 @@ a:hover {
 }
 
 body {
-  margin:0;
+  margin:auto;
   place-items: center;
   max-width:1440px;
   max-height:1517px;
