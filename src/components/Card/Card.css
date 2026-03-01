@@ -19,7 +19,7 @@
 .card-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(255, 96, 96, 1);
+  /*background: rgba(255, 96, 96, 1);*/
   opacity: calc(0.4);
 }
 

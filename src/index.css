@@ -1,5 +1,4 @@
 :root {
-  font-family: Montserrat, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -29,6 +28,7 @@ body {
   max-height:1517px;
   min-width: 375px;
   min-height: 842.88px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
