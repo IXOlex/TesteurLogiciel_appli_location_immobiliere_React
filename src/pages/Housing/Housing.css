@@ -32,6 +32,10 @@
     align-items: flex-end;
 }
 
+.housing-right p {
+    color:rgba(255, 96, 96, 1);
+}
+
 .housing-details {
     display:flex;
     flex-direction:column;
@@ -100,4 +104,12 @@
 
 .fa-star.inactive {
     color: #e3e3e3;
+}
+
+.collapse_block {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 76px;
+    margin-bottom:50px;
 }

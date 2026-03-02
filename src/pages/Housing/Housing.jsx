@@ -71,6 +71,7 @@ function Housing() {
 
       </div>
 
+      <div className="collapse_block">
       <Collapse title="Description">
         {logement.description}
       </Collapse>
@@ -82,6 +83,7 @@ function Housing() {
           ))}
         </ul>
       </Collapse>
+    </div>
     </main>
   );
 }
