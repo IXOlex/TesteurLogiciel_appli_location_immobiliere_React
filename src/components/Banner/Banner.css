@@ -38,24 +38,32 @@
 @media (max-width: 375px) {
     
     .banner {
-        position:relative;
-        height:111px;
+        width: 90%;
+        position: relative;
+        height: 111px;
         border-radius: 25px;
         overflow: hidden;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         border-width: 1px;
+        margin:auto;
         margin-left:20px;
         margin-right:20px;
     }
     
-    .banner h1 {
+    .banner h1 { 
+    position: relative;
+    display:flex;
     color: white;
     font-weight: 700;
     font-size: 24px;
     line-height: 143%;
     letter-spacing: 0%;
     vertical-align: bottom;
+    padding-right:94px;
+    padding-left:16px;
+    padding-top:31px;    
+    padding-bottom:32px;
     }
 }

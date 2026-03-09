@@ -19,8 +19,7 @@
 .card-overlay {
   position: absolute;
   inset: 0;
-  /*background: rgba(255, 96, 96, 1);*/
-  opacity: calc(0.4);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(10, 10, 10, 0) 42%, rgba(4, 4, 4, 0.205) 99.99%, rgba(0, 0, 0, 0.5) 100%);
 }
 
 /* Titre */
@@ -36,4 +35,28 @@
   letter-spacing: 0%;
   vertical-align: bottom;
   color: #ffffff;
+}
+
+
+@media (max-width: 375px) {
+ .card {
+   display:flex;
+   height:255px;
+  }
+
+  .card-overlay {
+    display:flex;
+    height:255px;
+  }
+
+  .card-img {
+    height:255px;
+  }
+  .card-title {
+  width:auto;
+  left:20px;
+  bottom:20px;
+  top:auto;
+}
+  
 }
