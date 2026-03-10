@@ -25,7 +25,7 @@
 }
 @media (max-width: 375px) {
 
-  .home{
+  .home {
     width:100%;
   }
   
@@ -40,6 +40,5 @@
     grid-template-columns:repeat(1,1fr);  
     gap:20px;
     padding:0px 20px 27px 20px;
-    
   }
 }
