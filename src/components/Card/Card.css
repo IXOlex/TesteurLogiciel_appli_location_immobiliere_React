@@ -15,7 +15,6 @@
   object-fit: cover;
 }
 
-/* Overlay rouge dégradé */
 .card-overlay {
   position: absolute;
   inset: 0;
@@ -23,18 +22,19 @@
 }
 
 /* Titre */
-.card-title {
+.card .card-title {
   display:flex;
   position: absolute;
-  width: 300px;
   top: 268px;
-  left: 20px;
   font-weight: 700;
   font-size: 18px;
   line-height: 143%;
   letter-spacing: 0%;
   vertical-align: bottom;
   color: #ffffff;
+  margin:0;
+  padding-left:15px;
+  padding-right:15px;
 }
 
 
@@ -52,10 +52,9 @@
   .card-img {
     height:255px;
   }
-  .card-title {
+  .card .card-title {
   width:auto;
-  left:20px;
-  bottom:20px;
+  bottom:15px;
   top:auto;
 }
   

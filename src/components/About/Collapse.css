@@ -1,4 +1,4 @@
-.collapse {
+.collapse2 .collapse {
     width: 1023px;
     display: flex;
     flex-direction: column;
@@ -41,7 +41,7 @@
     font-family: Montserrat;
     font-size: 18px;
     line-height: 143%;
-    color: black;
+    color: #000000;
     max-height: 0px;
     overflow: hidden;
     transition: max-height 0.35s ease;
@@ -60,4 +60,38 @@
 .collapse-content.open .collapse-inner {
     opacity: 1;
     transform: translateY(0);
+}
+
+@media (max-width: 375px) {
+
+    .collapse2 {
+        margin-bottom:20px;
+        gap:20px;
+    }
+
+    .collapse2 .collapse {
+        display:flex;
+        width: 90%;
+    }
+
+    .collapse2 .collapse .collapse-header {
+        font-size:11px;
+        height:30px;
+        padding:0;
+    }
+    .collapse-header h3 {
+        margin:0;
+        margin-left:10px;
+    }
+    .collapse-header i {
+        padding-right:10px;
+        padding-left:10px;
+    }
+
+    .collapse-inner {
+        font-size:12px;
+        padding:10px 0 10px 0;
+        line-height:143%;
+    }
+    
 }
