@@ -122,6 +122,10 @@
     flex-direction: row;
 }
 
+.collapse_block > * {
+    flex: 1;
+}
+
 @media (max-width: 375px) {
 
     .main_block {
