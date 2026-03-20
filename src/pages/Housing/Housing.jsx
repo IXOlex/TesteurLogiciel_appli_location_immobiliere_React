@@ -70,20 +70,21 @@ function Housing() {
         </div>
 
       </div>
+      <div className="housing-collapse">
+        <div className="collapse_block">
+          <Collapse title="Description">
+            {logement.description}
+          </Collapse>
 
-      <div className="collapse_block">
-      <Collapse title="Description">
-        {logement.description}
-      </Collapse>
-
-      <Collapse title="Équipements">
-        <ul>
-          {logement.equipments.map((item, i) => (
-            <li key={i}>{item}</li>
-          ))}
-        </ul>
-      </Collapse>
-    </div>
+          <Collapse title="Équipements">
+            <ul>
+              {logement.equipments.map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
+            </ul>
+          </Collapse>
+        </div>
+      </div>
     </main>
   );
 }

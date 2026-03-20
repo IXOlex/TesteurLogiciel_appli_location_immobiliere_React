@@ -4,13 +4,23 @@
 }
 
 .banner2 {
+    position: relative;
     background-image: url("../../images/banner2.svg");
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 86%;
     height: 223px;
     margin-bottom:38px;
     border-radius: 25px;
-    mix-blend-mode: Darken;
+    overflow: hidden;
+}
+
+.banner2::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .main_box {

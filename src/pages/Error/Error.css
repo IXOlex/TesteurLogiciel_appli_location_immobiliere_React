@@ -57,3 +57,30 @@
     margin:auto;
     flex-direction: column;
 }
+
+@media (max-width: 375px) {
+    .MainError {
+        width:100%;
+    }
+    .MainError a {
+        padding-bottom:113px;
+    }
+    .MainError .error {
+        display:flex;
+        height:99px;
+        margin:85px 88.5px 113px 88.5px;
+    }
+    .MainError .error h1 {
+        height:99px;
+        font-size:96px;
+    }
+    .MainError .errorpage {
+        display:flex;
+        margin:0px 57.5px 113px 57.5px;
+        
+    }
+    .MainError .errorpage h2 {
+        font-size:18px;
+        text-align:center;
+    }
+}
