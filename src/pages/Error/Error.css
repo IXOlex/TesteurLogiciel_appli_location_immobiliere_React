@@ -40,6 +40,7 @@
     justify-content: center;
     padding-bottom:139px;
     color:black;
+    text-decoration:underline;
 }
 
 .footer {
@@ -64,6 +65,7 @@
     }
     .MainError a {
         padding-bottom:113px;
+        text-underline-offset:auto;
     }
     .MainError .error {
         display:flex;

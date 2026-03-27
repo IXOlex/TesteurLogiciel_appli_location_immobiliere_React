@@ -33,6 +33,8 @@
 
 .housing-right p {
     color: rgba(255, 96, 96, 1);
+    display:flex;
+    
 }
 
 .housing-details {
@@ -46,8 +48,8 @@
     font-weight: 500;
     font-size: 36px;
     color: rgba(255, 96, 96, 1);
-    height: 51px;
     margin: 0;
+    margin-bottom:5px;
 }
 
 .housing-info .housing-details p {
@@ -90,17 +92,24 @@
     border-radius: 50%;
 }
 
+.housing-host p {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 18px;
+    line-height:143%;
+    text-align: right;
+}
 .housing-rating {
     display: flex;
     justify-content: flex-end;
-    margin-top: 21px;
+    
     width: 30px;
     height: 30px;
 }
 
 .fa-star {
     padding: 9px;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 .fa-star.active {
@@ -137,7 +146,6 @@
     .housing-info {
         display: flex;
         flex-direction: column;
-        gap: 15px;
         width: 100%;
         margin: 0px 20px 0px 20px;
     }
@@ -207,6 +215,7 @@
 
     .housing-host p {
         font-size: 12px;
+        margin-bottom:13px;
     }
 
     /* STARS */
@@ -219,7 +228,7 @@
 
     .housing-collapse {
         width: 100%;
-        margin: 20px 20px 27px 20px;
+        margin: 0px 20px 27px 20px;
     }
 
     .collapse_block {

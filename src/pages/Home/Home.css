@@ -17,18 +17,16 @@
 }
 
 /* Desktop par défaut */
-@media (max-width: 1024px) {
-  
-}
-@media (max-width: 768px) {
-  
-}
+
 @media (max-width: 375px) {
 
   .home {
     width:100%;
   }
-  
+
+  .main_block {
+    margin:0;
+  }
   .box_card { 
     background:none;
     padding:0;

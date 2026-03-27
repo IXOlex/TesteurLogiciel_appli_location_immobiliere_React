@@ -26,6 +26,7 @@ function Housing() {
   }
 
   const logement = properties.find(item => item.id === id.toString());
+  const nameParts = logement.host.name.split(" ");
 
   if (!logement) {
     return <Error />;
@@ -52,8 +53,12 @@ function Housing() {
         </div>
 
         <div className="housing-right">
+
           <div className="housing-host">
-            <p>{logement.host.name}</p>
+            <p>
+              {nameParts[0]} <br />
+              {nameParts.slice(1).join(" ")}
+            </p>
             <img src={logement.host.picture} alt={logement.host.name} />
           </div>
 
@@ -67,6 +72,7 @@ function Housing() {
               </span>
             ))}
           </div>
+
         </div>
 
       </div>
@@ -85,7 +91,7 @@ function Housing() {
           </Collapse>
         </div>
       </div>
-    </main>
+    </main >
   );
 }
 
