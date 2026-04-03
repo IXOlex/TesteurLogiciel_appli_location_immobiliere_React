@@ -1,0 +1,27 @@
+> appli@0.0.0 test:coverage
+> vitest run --coverage
+
+
+ RUN  v4.1.0 D:/Openclassroom Projet 2025/P8 - appli web avec React/TesteurLogiciel_appli_location_immobiliere_React/Appli
+      Coverage enabled with v8
+
+ ✓ src/components/About/Collapse.test.jsx (1 test) 48ms
+ ✓ src/components/Card/Card.test.jsx (2 tests) 166ms
+
+ Test Files  2 passed (2)
+      Tests  3 passed (3)
+   Start at  06:30:25
+   Duration  3.13s (transform 99ms, setup 484ms, import 494ms, tests 213ms, environment 4.24s)
+
+ % Coverage report from v8
+---------------|---------|----------|---------|---------|-------------------
+File           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
+---------------|---------|----------|---------|---------|-------------------
+All files      |     100 |      100 |     100 |     100 |                  
+ About         |     100 |      100 |     100 |     100 |                  
+  Collapse.css |       0 |        0 |       0 |       0 |                  
+  Collapse.jsx |     100 |      100 |     100 |     100 |                  
+ Card          |     100 |      100 |     100 |     100 |                  
+  Card.css     |       0 |        0 |       0 |       0 |                  
+  Card.jsx     |     100 |      100 |     100 |     100 |                  
+---------------|---------|----------|---------|---------|-------------------
