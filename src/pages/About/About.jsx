@@ -1,7 +1,7 @@
 import Collapse from "../../components/About/Collapse";
 import "./About.css";
 
-function About() {
+function About() {// Composant de la page "À propos"
     return (
         <main className="about">
             <section className="main_box">

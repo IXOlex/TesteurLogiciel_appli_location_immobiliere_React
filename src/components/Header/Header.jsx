@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import logo from "../../images/LOGO_alt.svg";
 import "./Header.css";
 
-function Header() {
+function Header() {// Composant de header pour afficher le logo et les liens de navigation
   return (
     <header className="header">
       <Link to="/">

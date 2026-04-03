@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Slide.css";
 
-function Slide({ pictures }) {
+function Slide({ pictures }) {// Composant de diaporama pour afficher les images d'un logement
     const [index, setIndex] = useState(0);
 
     if (!pictures || pictures.length === 0) return null;
@@ -14,7 +14,7 @@ function Slide({ pictures }) {
         setIndex(prev => (prev - 1 + pictures.length) % pictures.length);
     };
 
-    return (
+    return (// Rendu du composant de diaporama avec les boutons de navigation et le compteur d'images
         <div className="slideshow">
             <img className="slide-img" src={pictures[index]} alt="logement" />
 

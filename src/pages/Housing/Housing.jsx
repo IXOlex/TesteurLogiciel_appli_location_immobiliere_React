@@ -5,13 +5,13 @@ import "./Housing.css";
 import Slide from "../../components/Slide/Slide";
 import Collapse from "../../components/About/Collapse";
 
-function Housing() {
+function Housing() {// Composant de la page de logement pour afficher les détails d'un logement spécifique
   const [properties, setProperties] = useState([]);
   const [loading, setLoading] = useState(true);
 
   const { id } = useParams();
 
-  useEffect(() => {
+  useEffect(() => {// Récupération des données des logements depuis l'API et stockage dans le state
     fetch("http://localhost:8080/api/properties")
       .then((response) => response.json())
       .then((data) => {
@@ -21,18 +21,19 @@ function Housing() {
       .catch((error) => console.error(error));
   }, []);
 
-  if (loading) {
+  if (loading) {// Affichage d'un message de chargement pendant la récupération des données
     return <p>Loading...</p>;
   }
 
-  const logement = properties.find(item => item.id === id.toString());
-  const nameParts = logement.host.name.split(" ");
+  const logement = properties.find(item => item.id === id.toString());// Recherche du logement correspondant à l'ID dans les données récupérées
 
-  if (!logement) {
+  if (!logement) {// Affichage de la page d'erreur si le logement n'est pas trouvé
     return <Error />;
   }
 
-  return (
+  const nameParts = logement.host.name.split(" ");// Séparation du nom de l'hôte en parties pour l'affichage dans la section d'information du logement
+
+  return (// Rendu de la page de logement avec les détails du logement, le diaporama et les sections de description et d'équipements
     <main className="main_block">
 
       <Slide pictures={logement.pictures} />

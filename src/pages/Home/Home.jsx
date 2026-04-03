@@ -3,17 +3,17 @@ import Banner from "../../components/Banner/Banner";
 import Card from "../../components/Card/Card";
 import "./Home.css";
 
-function Home() {
+function Home() {// Composant de la page d'accueil pour afficher la bannière et les cartes des logements
   const [properties, setProperties] = useState([]);
 
-  useEffect(() => {
+  useEffect(() => {// Récupération des données des logements depuis l'API et stockage dans le state
     fetch("http://localhost:8080/api/properties")
       .then((response) => response.json())
       .then((data) => setProperties(data))
       .catch((error) => console.error(error));
   }, []);
 
-  return (
+  return (// Rendu de la page d'accueil avec la bannière et les cartes des logements
     <main className="home">
       <Banner title="Chez vous, partout et ailleurs" />
       <section className="box_card">

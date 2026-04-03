@@ -3,7 +3,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import AppRouter from "./router/AppRouter";
 
-function App() {
+function App() {// Composant principal de l'application
   return (
     <BrowserRouter>
       <Header />

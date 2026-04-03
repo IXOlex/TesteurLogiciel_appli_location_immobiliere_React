@@ -1,18 +1,18 @@
 import "./Collapse.css";
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect } from "react";// Importation des styles et des hooks nécessaires pour le composant de collapse
 
-function Collapse({ title, children }) {
-    const [isOpen, setIsOpen] = useState(false);
-    const [height, setHeight] = useState(0);
-    const contentRef = useRef(null);
+function Collapse({ title, children }) {// Composant de collapse pour afficher du contenu de manière rétractable
+    const [isOpen, setIsOpen] = useState(false);// État pour gérer l'ouverture ou la fermeture du collapse
+    const [height, setHeight] = useState(0);// État pour stocker la hauteur du contenu du collapse
+    const contentRef = useRef(null);// Référence pour accéder au contenu du collapse
 
-    useEffect(() => {
-    if (isOpen && contentRef.current) {
-        setHeight(contentRef.current.scrollHeight);
-    }
-        }, [isOpen, children]);
+    useEffect(() => {// Met à jour la hauteur du contenu lorsque le collapse est ouvert ou que les enfants changent
+        if (isOpen && contentRef.current) {
+            setHeight(contentRef.current.scrollHeight);
+        }
+    }, [isOpen, children]);
 
-    return (
+    return (// Rendu du composant de collapse
         <div className="collapse">
             <div
                 className="collapse-header"
